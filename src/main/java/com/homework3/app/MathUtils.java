@@ -60,8 +60,9 @@ public class MathUtils
 
     public static int greatestCommonDivisor(int a, int b) {
         if (b == 0) {
-            return a;
+             return Math.abs(a);
         }
-        return greatestCommonDivisor(b, a % b);
+        int result = greatestCommonDivisor(b, a % b);
+        return Math.abs(result);
     }
 }
