@@ -31,7 +31,39 @@
       <version>3.12.4</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>4.1.1</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.10.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.16.1</version>
+    </dependency>
   </dependencies>
+
+  <!--<suits>
+    <suite name="Suite1">
+      <listeners>
+        <listener class-name="homework3part2.Helpers.TestListener" />
+      </listeners>
+      <test name="Test1">
+        <classes>
+          <class name="homework3part2.HeaderNavigationTests" />
+          <class name="homework3part2.ProductFlowTests" />
+
+        </classes>
+      </test>
+    </suite>
+  </suits>-->
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
